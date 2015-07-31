@@ -1,6 +1,13 @@
 {
     "name": "mobly/logger",
     "description": "Common logger library for Mobly applications",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "homepage": "https://github.com/mobly/logger",
+    "support": {
+        "issues": "https://github.com/mobly/logger/issues"
+    },
     "keywords": [
         "mobly",
         "log",
@@ -21,6 +28,5 @@
         "psr-4": {
             "Mobly\\Logger\\": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }

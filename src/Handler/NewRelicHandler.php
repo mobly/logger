@@ -24,8 +24,6 @@ class NewRelicHandler extends \Monolog\Handler\NewRelicHandler
 
         if ($appName = $this->getAppName($record['context'])) {
             $this->setNewRelicAppName($appName);
-        } else {
-            $this->setNewRelicAppName(\Config::get('services.newrelic.appname'));
         }
 
         if ($transactionName = $this->getTransactionName($record['context'])) {
